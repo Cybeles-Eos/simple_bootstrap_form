@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset=utf-8>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>HTML CSS Form exercise</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="mystyle.css">
+  </head>
+  <body>
+  <div class="container-md px-5 py-4 my-5">
+    <div id="form_fill">
+      <h1 class="fm_title text-center">Elite Sports League Form</h1>
+      <h3 class="fm_label text-center">Join the league today! Fill out the form below to track teams, stats, and your favorite matches easily.</h3>
+  
+      <form class="fm_form p-4 mt-4 rounded-2">
+        <!-- ____Username and Email Inputs____ -->
+        <div class="mb-3">
+          <label for="username" class="form-label"><span class="req">*</span> Full name </label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="e. g. Juan Cruz" aria-describedby="username-help">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"><span class="req">*</span> Email address </label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="e. g. example@gmail.com" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+  
+  
+        <!-- ____Section Selections____ -->
+        <label for="sections" class="form-label"><span class="req">*</span> Select Your Section</label>
+        <select id="fm_select" name="package" class="form-select mb-3" aria-label="Default select example">
+          <option selected>Open this select menu</option>
+          <option value="DIT">DIT</option>
+          <option value="DOMT">DOMT</option>
+          <option value="DMET ">DMET</option>
+        </select>
+  
+        <!-- ____Date___ -->
+        <div class="mb-3">
+          <label for="date" class="form-label"><span class="req">*</span> Birth Date</label>
+          <input type="date" id="date" name="birthdate" class="form-control" placeholder="M / D / Y" aria-describedby="date-info">
+        </div>
+        
+  
+        <!-- ____Age Input____ -->
+        <div class="mb-3">
+          <label for="age" class="form-label"><span class="req">*</span> Age :</label>
+          <input type="number" id="age" name="user_age" class="form-control" placeholder="0" aria-describedby="number-help">
+        </div>
+  
+        <!-- ____Gender Radios____ -->
+        <label for="termsAndConditions" class="form-label"><span class="req">*</span> Gender</label>
+        <div class="mb-3">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="terms" id="inlineRadio1" value="Male">
+            <label class="form-check-label chk_bx" for="inlineRadio1">Male</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="terms" id="inlineRadio2" value="Female">
+            <label class="form-check-label chk_bx" for="inlineRadio2">Female</label>
+          </div>
+        </div>
+  
+        <!-- ____Checkbox Sports____ -->
+        <label for="sports" class="form-label"><span class="req">*</span> What is your sports?</label>
+        <div class="form-check">
+          <input class="form-check-input" name="hobby" type="checkbox" value="bball" id="flexCheckChecked" checked>
+          <label class="form-check-label chk_bx" for="basketball">
+            Basketball
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" name="hobby" type="checkbox" value="boxing" id="flexCheckDefault">
+          <label class="form-check-label chk_bx" for="boxing">
+            Boxing
+          </label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" name="hobby" type="checkbox" value="fball" id="flexCheckDefault">
+          <label class="form-check-label chk_bx" for="Football">
+            Football
+          </label>
+        </div>
+  
+  
+        <!-- ____Position Input____ -->
+        <div class="mb-4">
+          <label for="aboutYou" class="form-label">Share a bit about yourself as a player ?</label>
+          <textarea class="mt-1 p-2 rounded-2" name="about" id="aboutYou" placeholder="E.g. I've played as a point guard for 3 years..." aria-describedby="about-you"></textarea>
+        </div>
+    
+  
+        <!-- ____Submit Button____ -->
+        <button class="btn btn-primary mt-0" id="btn">Submit</button>
+      </form>
+  
+    </div>
+
+
+
+
+    <!-- Form Complete -->
+    <div id="form_overview" class="fm_complete m-2 mb-3 p-4 rounded d-none">
+      <p class="cf_title" id="name_txtcon">Dawn Cruz</p>
+
+      <p class="cf_txt mb-4"><span class="cf_val" id="email_txtcon">Cruzdawn58@gmail.com</span></p>
+
+      <div class="cf_grid mb-4">
+        <p class="cf_txt mb-0">Section: <span class="cf_val ms-1" id="sec_txtcon">DIT</span></p>
+        <p class="cf_txt mb-0">Birthdate: <span class="cf_val ms-1" id="birt_txtcon">1/10/2005</span></p>
+        <p class="cf_txt mb-0">Age: <span class="cf_val ms-1" id="age_txtcon">20</span></p>
+        <p class="cf_txt mb-0">Gender: <span class="cf_val ms-1" id="gend_txtcon">Male</span></p>  
+      </div>
+      
+      <div class="sports_cont mt-2 px-2 py-1">
+        <div class="spo_s d-none bball">
+          <img src="./img/basketball-line.svg" title="Basketball" alt="">
+        </div>
+        <div class="spo_s d-none boxing">
+          <img src="./img/boxing-line.svg" title="Boxing" alt="">
+        </div>
+        <div class="spo_s d-none fball">
+          <img src="./img/football-line.svg" title="football" alt="">
+        </div>
+      </div>
+
+      <p class="cf_txt mb-1 mt-1 des_cf"><span class="cf_val" id="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque vero eius nobis illo ad aliquid.</span></p>
+    </div>
+    <div id="complete_form" class="fm_complete m-2 p-4 rounded d-none">
+      <h1 id="tnx-title" class="fm_title text-center m-0 mb-1">Thanks for your response</h1>
+      <p id="tnx-label" class="fm_label text-center">Your response has been recorded. We appreciate your time.</p>
+      <button id="tnx-close" class="btn btn-danger mt-4 mx-5">Close</button>
+    </div>
+
+  </div>
+  </body>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</html>

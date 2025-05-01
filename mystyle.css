@@ -1,0 +1,190 @@
+:root{
+   --inter: "Inter", sans-serif;
+   --poppins: "Poppins", sans-serif; 
+
+   --white: #F4F4F4;
+   --sem-white: #bebebe;
+   --shadow: #cccccc34;
+   --dark: #1d2026;
+   --black: #0e1013;
+
+   --font-text: 14px;
+   --font-label: 13px;
+}
+
+*{
+   font-family: var(--poppins);
+   color: var(--white);
+}
+body{
+   background-color: var(--black);
+}
+form{
+   background-color: var(--dark);
+}
+
+label{
+   margin-bottom: 4px !important;
+   font-size: var(--font-text);
+}
+input{
+   font-size: var(--font-label) !important;
+   font-weight: 900;
+   background-color: #0e1013 !important;
+   color: var(--sem-white) !important;
+   border: 1px solid var(--shadow) !important;
+}
+input::placeholder{
+   color: var(--shadow) !important;
+   font-weight: 300 !important;
+   font-size: var(--font-label) !important;
+}
+option{
+   font-size: var(--font-label) !important;
+ 
+}
+.req{
+   color: red;
+}
+
+
+/*Name, Email*/
+.fm_form{
+   max-width: 450px;
+   margin: 0 auto;
+}
+.fm_title{
+   font-size: 1.9rem;
+}
+.fm_label{
+   font-weight: 300 !important;
+   font-size: 12px;
+   max-width: 390px;
+   margin: 0 auto !important;
+   margin-top: .9rem !important;
+   color: var(--sem-white);
+   line-height: 18px;
+}
+
+/*Selection*/
+#fm_select{
+   background-color: var(--black);
+   border: 1px solid var(--shadow) !important;
+   font-size: var(--font-label) !important;
+   color: var(--sem-white) !important;  
+}
+
+
+/*Date*/
+input[type="date"]::-webkit-calendar-picker-indicator {
+   filter: invert(1); /* changes icon color */
+   color: var(--sem-white);
+}
+
+/*Number of persons*/
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*checkbox*/
+.chk_bx{
+   color: var(--sem-white);
+}
+
+
+#btn{
+   font-size: var(--font-text) !important;
+   width: 100%;
+   margin: 0 !important;
+}
+
+
+
+
+/*Complete Close Form*/
+.cf_title{
+   font-size: 22px;
+   color: var(--white);
+   margin: 0 !important;
+}
+.cf_txt{
+   color: var(--white);
+   
+}
+.cf_val{
+   color: var(--sem-white);
+   font-size: var(--font-text);
+}
+
+.cf_grid{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+
+.fm_complete{
+   max-width: 500px;
+   margin-inline: auto !important;
+   color: var(--sem-white);
+   display: grid;
+   border: 1px solid var(--shadow);
+}
+#tnx-title{
+   font-size: 20px;
+}
+#tnx-label{
+   margin: 0 !important;
+   margin-inline: auto !important;
+   max-width: 250px;
+}
+#tnx-close{
+   font-size: var(--font-label);
+   width: 200px !important;
+   margin-inline: auto !important;
+}
+
+
+#form_overview{
+   position: relative;
+}
+
+
+.sports_cont{
+   position: absolute;
+   right: 10px;
+   top: 10px;
+   display: flex;
+   gap: 10px;
+}
+.spo_s{
+   /* border: 1px solid var(--dark); */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 22rem;
+   will-change: transform;
+   transform: translateZ(0);
+   padding:2px;
+}
+.spo_s > img{
+   width: 1.5rem;
+   
+}
+.des_cf{
+   line-height: 20px !important;
+}
+
+#aboutYou{
+   width: 100%;
+   height: 6.2rem;
+   resize: none;
+   background-color: var(--black);
+   border: 1px solid var(--shadow);
+   outline: none;
+   font-size: var(--font-label);
+   color: var(--sem-white);
+}
+
+
