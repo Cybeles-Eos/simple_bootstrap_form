@@ -48,7 +48,7 @@ option{
 }
 
 
-/*Name, Email*/
+/*Name and Email Input designs*/
 .fm_form{
    max-width: 450px;
    margin: 0 auto;
@@ -92,8 +92,6 @@ input[type=number]::-webkit-inner-spin-button {
 .chk_bx{
    color: var(--sem-white);
 }
-
-
 #btn{
    font-size: var(--font-text) !important;
    width: 100%;
@@ -103,7 +101,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 
 
-/*Complete Close Form*/
+/*Complete Close Form Styles*/
 .cf_title{
    font-size: 22px;
    color: var(--white);
@@ -159,7 +157,6 @@ input[type=number]::-webkit-inner-spin-button {
    gap: 10px;
 }
 .spo_s{
-   /* border: 1px solid var(--dark); */
    display: flex;
    justify-content: center;
    align-items: center;
