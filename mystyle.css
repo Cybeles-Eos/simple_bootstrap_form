@@ -47,7 +47,6 @@ option{
    color: red;
 }
 
-
 /*Name and Email Input designs*/
 .fm_form{
    max-width: 450px;
@@ -74,7 +73,6 @@ option{
    color: var(--sem-white) !important;  
 }
 
-
 /*Date*/
 input[type="date"]::-webkit-calendar-picker-indicator {
    filter: invert(1); /* changes icon color */
@@ -97,8 +95,6 @@ input[type=number]::-webkit-inner-spin-button {
    width: 100%;
    margin: 0 !important;
 }
-
-
 
 
 /*Complete Close Form Styles*/
@@ -142,12 +138,9 @@ input[type=number]::-webkit-inner-spin-button {
    width: 200px !important;
    margin-inline: auto !important;
 }
-
-
 #form_overview{
    position: relative;
 }
-
 
 .sports_cont{
    position: absolute;
@@ -183,5 +176,3 @@ input[type=number]::-webkit-inner-spin-button {
    font-size: var(--font-label);
    color: var(--sem-white);
 }
-
-
